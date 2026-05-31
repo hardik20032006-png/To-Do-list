@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(139, 205, 231, 0.325);
+    font-family: 'Times New Roman', Times, serif;
+}
+#container{
+    display: flex;
+}
+
+.filter{
+    height: 500px;
+    width: 350px;
+    border: solid 2px black;
+    background-color: rgba(139, 205, 231, 0.388);
+    margin-left:80px;
+    margin-top: 18vh;
+    border-radius: 20px;
+    margin-right: 80px;
+      
+}
+.filter h1{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+.main{
+    flex:1;
+    height:97vh;
+    margin-top: 1vh;
+    margin-right: 1vw;
+    position:relative;
+    border:2px solid black;
+}
+.main h1{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 50vh;
+}
+
+#add-task{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 0, 0);
+    font-size: 30px;
+    position:absolute;
+    font-weight: 800;
+    border: solid 3px black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom:5px;
+    right:5px;
+    position: absolute;
+}
+
+.filter-elements{
+    height: 50px;
+    width: 250px;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+.apply-filter{
+    height: 50px;
+    width: 250px;
+    border: solid 2px black;
+    color: white;
+    background-color: red;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+.apply-filter:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.reset{
+    height: 50px;
+    width: 250px;
+    border: solid 2px black;
+    color: white;
+    background-color: red;
+    font-size: 30px;
+    font-weight: 800;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.reset:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+#inputbox{
+    height: 700px;
+    width: 600px;
+    border: solid 3px black;
+    background-color: rgba(255, 255, 255, 0.080);
+    z-index: 10;
+    border-radius: 15px;
+    position: fixed;
+    top: 35px;
+    left: 450px;
+}
+#form-heading{
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(255, 0, 0);
+}
+
+#tasktext{
+    height: 50px;
+    width: 30vw;
+    border: 2px solid black;
+    margin-top: 30px;
+    border-radius: 15px;
+    font-size: 30px;
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#counter{
+    font-size: 30px;
+    margin-left: 30vw;
+    margin-top: 3px;
+}
+#taskdiscription{
+    height: 200px;
+    width: 30vw;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 30px;
+    padding-left: 20px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#category{
+    height: 50px;
+    width: 32vw;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 30px;
+    margin-top: 25px;
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#priority{
+    height: 50px;
+    width: 32vw;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 30px;
+    margin-top: 25px;
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#submit{
+    border: solid 2px black;
+    border-radius: 5px;
+    height: 50px;
+    width: 25vw;
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 800;
+    background-color: red;
+    color: white;
+    margin-left: 20px;
+}
+#cancelbtn{
+    border: solid 2px black;
+    border-radius: 5px;
+    height: 50px;
+    width: 10vw;
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 10px;
+    background-color: red;
+    color: white; 
+}
+#taskcards{
+    height: calc(97vh - 125px);
+    align-content:start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    overflow-y:auto;
+    padding-left: 20px;
+}
+.taskcard{
+    height: 270px;
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 250px;
+    border: solid 2px black;
+    background-color: #fa00004a;
+     overflow-wrap: break-word;
+    word-break: break-word;
+    font-size: 18px;
+    overflow-y: auto;   
+    overflow-x: hidden;
+    position: relative;
+}
+
+.completcheck{
+    margin-left: auto;
+    display: flex;
+    transform: scale(2.5);
+    margin-right: 10px;
+    margin-top: 12px;
+    
+}
+.tasktext{
+    margin: 5px;
+}
+
+demo{
+    color: #00fa2150;
+}
+#deleatimg{
+    margin-left: auto;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}

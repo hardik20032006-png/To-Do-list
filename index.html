@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <div class="body" id="container">
+
+    <div class="filter">
+    <h1>Filters</h1>
+    <select name="catogary" id="catogary" class="filter-elements">
+        <option value="all" selected>Category</option>
+        <option value="Study">Study</option>
+        <option value="Travel">travel</option>
+        <option value="Work">work</option>
+        <option value="Family/Friends">family/friends</option>
+        <option value="Other">other</option>
+    </select>
+    <select name="status" id="status" class="filter-elements">
+        <option value="all" selected>Status</option>
+        <option value="pending">pending</option>
+        <option value="complete">complete</option>
+    </select>
+    <select name="prieority" id="prieroty" class="filter-elements">
+        <option value="all" selected>priority</option>
+        <option value="low">low</option>
+        <option value="medium">medium</option>
+        <option value="high">high</option>
+        <option value="very high">very high</option>
+    </select>
+    <button class="apply-filter">Apply Filters</button>
+    <button class="reset">Reset</button>
+    </div>
+
+    <div class="main">
+        <h1>To-Do list</h1>
+        <div id="taskcards"></div>
+        <button id="add-task">+</button>
+    </div>
+
+    <div>
+
+        
+    <script src="script.js"></script>
+</body>
+</html>
