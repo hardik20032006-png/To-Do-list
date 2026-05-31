@@ -445,14 +445,20 @@ if(task.status === "pending"){
     // completed task
     if(task.status === "complete"){
 
-        taskcard.style.backgroundColor="#00fa2150";
+    taskcard.style.backgroundColor="#00fa2150";
 
-        let deleatimg=document.createElement("img");
-        deleatimg.src="delete.png";
-        deleatimg.id="deleatimg";
-        taskcard.appendChild(deleatimg);
+    let deleatimg=document.createElement("img");
+    deleatimg.src="delete.png";
+    deleatimg.id="deleatimg";
+    taskcard.appendChild(deleatimg);
 
-        deleatimg.addEventListener("click",function(){
+    deleatimg.addEventListener("click",function(){
+
+        let conformdel = confirm(
+            "Do you want to delete this task?"
+        );
+
+        if(conformdel){
 
             taskcard.remove();
 
@@ -473,9 +479,12 @@ if(task.status === "pending"){
                 )
             );
 
-        });
+        }
 
-    }
+    });
+
+}
+
 let tasknameLabel = document.createElement("h3");
 tasknameLabel.textContent = "Task name:";
 tasknameLabel.style.fontSize = "25px";
